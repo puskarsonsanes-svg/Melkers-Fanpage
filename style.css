@@ -1,11 +1,14 @@
-*{
-    font-family: 'Comic Sans MS', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    font-family: "Playpen Sans", 'Comic Sans MS';
+    font-optical-sizing: auto;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
-    
     scroll-behavior: smooth;
 }
+
 
 
 
