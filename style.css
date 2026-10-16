@@ -1,0 +1,211 @@
+*{
+    font-family: 'Comic Sans MS', cursive;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    
+    scroll-behavior: smooth;
+}
+
+
+
+
+main, footer, nav, .card{
+
+    border: 1px solid black;
+    min-height: 100px;
+    padding: 3%;
+    background-color: antiquewhite;
+
+}
+
+
+header{
+    border: 1px solid black;
+    min-height: 100px;
+    padding: 3%;
+    background-color: antiquewhite;
+    display: block;
+}
+
+footer{
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: #4a3524;
+}
+
+.footer-content h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.footer-content p{
+    margin-bottom: 1rem;
+}
+
+.footer-content a{
+    display: inline-block;
+    color: #704323;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.15rem;
+}
+
+.footer-content a:hover{
+    color: #a33b27;
+}
+
+
+nav{
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    font-size: 1rem;
+    
+}
+
+nav a:hover{
+    color: red;
+    transition: 0.5s;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.buttons {
+    display:grid;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.menuButton{
+    background-color: transparent;
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.menuButton:hover{
+    color: lightslategray;
+
+}
+
+.refreshButton{
+    background-color: transparent;
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.refreshButton:hover {
+    color: lightslategrey;
+}
+
+
+.flamebox{
+    width: 100%;
+    display: grid;
+    
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+   
+}
+
+.imgsecret{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.imgsecretGrid {
+    display: grid;
+    gap:30px;
+}
+
+.imgbox{
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+
+.card{
+    display: grid;
+    gap: 30px;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+
+}
+
+
+
+@media(min-width:600px){
+
+    nav.myNav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        font-size: 1.5rem;
+    }
+    
+    .imgsecretGrid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .menuButton{
+        display: none;
+    }
+
+    .flamebox{
+        width: 40%;
+        display: flex;
+        margin: 0 auto;
+        
+    
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 30px;
+
+        
+    }
+
+    .imgbox{
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+
+    .imgbox img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .buttons{
+        display: block;
+    }
+
+    
+
+  
+
+
+
+}
