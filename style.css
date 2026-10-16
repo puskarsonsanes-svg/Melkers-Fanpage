@@ -9,10 +9,6 @@
     scroll-behavior: smooth;
 }
 
-
-
-
-
 main, footer, nav, .card{
 
     border: 1px solid black;
@@ -159,6 +155,10 @@ p{
 
 
 @media(min-width:600px){
+
+    .refreshButton {
+        display: none;
+    }
 
     nav.myNav{
         display: grid;
